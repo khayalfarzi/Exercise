@@ -3,6 +3,8 @@ public class HomeWork1 {
 
         System.out.println(displayMiddleChar("12345678"));
         System.out.println(vowelCounter("Hello World"));
+        System.out.println(checkNum(2468));
+
 
     }
 
@@ -38,5 +40,19 @@ public class HomeWork1 {
             }
         }
         return count;
+    }
+
+    public static boolean checkNum(int a) {
+        int count1 = 0, count2 = 0;
+        int dig = 0;
+        while (a > 0) {
+            dig++;
+            if ((a % 10) % 2 == 1) {
+                return false;
+            }
+        }
+        return true;
+
+
     }
 }
